@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ABSA Analyzer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight ABSA - Aspect-Based Sentiment Analysis</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="app">
+        <h1 class="hero-title">Insight ABSA</h1>
+        <p class="hero-sub">Understand customer feedback with aspect-level sentiment analysis</p>
 
-<h1>🔥 ABSA Analyzer</h1>
+        <div class="input-card">
+            <textarea id="inputText" placeholder="Write your review here... 
+Example: The food was amazing and the service was incredibly fast! However, the prices are a bit high."></textarea>
+            <button onclick="analyze()" class="btn-primary">Analyze Review →</button>
+        </div>
 
-<textarea id="inputText" placeholder="اكتب الريفيو هنا..."></textarea>
+        <div id="results"></div>
 
-<br><br>
+        <h3 class="section-label">📜 Previous Reviews & Analysis</h3>
+        <div id="history"></div>
+    </div>
 
-<button onclick="analyze()">Analyze</button>
-
-<div id="results"></div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
