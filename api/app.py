@@ -13,7 +13,6 @@ from src.preprocessing import preprocess_text
 
 app = Flask(__name__)
 
-# 🔥 أهم سطر (الحل)
 CORS(app)
 
 # ---------------------------------
