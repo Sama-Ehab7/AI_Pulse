@@ -38,11 +38,10 @@ def remove_extra_spaces(text):
 
 
 # -----------------------------
-# Handle mixed text
+# Handle mixed Arabic/English text
 # -----------------------------
 def clean_mixed_text(text):
-    # remove english words (optional)
-    text = re.sub(r'[a-zA-Z]+', '', text)
+    # Keep English words (important for meaning)
     return text
 
 
@@ -51,11 +50,11 @@ def clean_mixed_text(text):
 # -----------------------------
 def preprocess_text(text):
     text = str(text)
-    
+
     text = remove_emojis(text)
     text = remove_punctuation(text)
     text = normalize_arabic(text)
     text = clean_mixed_text(text)
     text = remove_extra_spaces(text)
-    
+
     return text
