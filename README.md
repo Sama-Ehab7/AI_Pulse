@@ -220,28 +220,6 @@ Performance depends on:
 
 ---
 
-## 📦 Submission Requirements
-
-### 1. Code Package (.zip)
-
-Must include:
-
-* Training and inference scripts
-* Model weights (mandatory)
-* `README.md`
-* `requirements.txt`
-
-⚠️ Do NOT include datasets in the ZIP file.
-
----
-
-### 2. Predictions File (.json)
-
-* Must follow the exact schema
-* Must include all test samples
-
----
-
 ## ⚠️ Common Pitfalls
 
 * Missing or duplicated `review_id`
